@@ -1,28 +1,24 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# HAI Showcase
 
-# HAI — AI Customer Support (Showcase Prototype)
+Landing page interaktif untuk konsep asisten AI customer support "HAI", dengan demo chat yang bisa dicoba. Ini prototipe awal sebelum dibangun ulang menjadi [hai-support-agent](https://github.com/HIIDAAYY/hai-support-agent) (multi-tenant, RAG, booking, WhatsApp).
 
-Landing page interaktif yang memperkenalkan konsep asisten AI customer-support "HAI", lengkap dengan demo chat yang benar-benar bisa diajak bicara. Proyek ini adalah cikal bakal hai-support-agent, yang kemudian dibangun ulang jadi platform multi-tenant sungguhan (RAG, booking, human handoff, WhatsApp).
+## Isi
 
-## Fitur
-
-Hero dan navigasi scroll-aware dengan micro-interaction. Ada demo chat langsung (`DemoChat`, Gemini 2.5 Flash) yang disetel untuk skenario klinik kecantikan fiktif "Lumina Aesthetic Clinic", bisa menjawab soal produk, tracking pesanan, dan menangani komplain. Section fitur dan use case menjelaskan skenario pemakaian, ditutup dengan perbandingan biaya (traditional support vs AI) lewat grafik interaktif (Recharts).
+- Hero dan navigasi dengan micro-interaction.
+- Demo chat (Gemini 2.5 Flash) untuk skenario klinik kecantikan fiktif: pertanyaan produk, cek pesanan, dan komplain.
+- Section use case dan grafik perbandingan biaya (Recharts).
 
 ## Stack
 
 React 19, TypeScript, Vite, Gemini API (`@google/genai`), Recharts, Tailwind CSS, lucide-react.
 
-## Menjalankan secara lokal
-
-Prasyarat: Node.js.
+## Menjalankan
 
 ```
 npm install
 ```
 
-Buat `.env.local` dan isi `GEMINI_API_KEY` dengan API key Gemini Anda, lalu jalankan:
+Buat `.env.local` berisi `GEMINI_API_KEY`, lalu:
 
 ```
 npm run dev
@@ -30,4 +26,4 @@ npm run dev
 
 ## Catatan
 
-Ini prototipe/showcase, bukan produk produksi. Klinik "Lumina Aesthetic Clinic", angka "500+ businesses", dan grafik perbandingan biaya di section Impact adalah data ilustratif untuk keperluan demo, bukan data nyata. Untuk versi yang benar-benar dipakai, dengan multi-tenant, RAG grounded, booking, dan WhatsApp, lihat [hai-support-agent](https://github.com/HIIDAAYY/hai-support-agent).
+Nama klinik, angka "500+ businesses", dan grafik biaya adalah data ilustrasi untuk demo, bukan data nyata.
